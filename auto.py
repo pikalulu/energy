@@ -106,8 +106,6 @@ class AutoRuns:
         error_msgs =[]
  
         user_list =[]
-        if mntPoint!= "" and mntPoint.endswith('/')==False:
-            mntPoint=mntPoint+os.sep
              
         user_config_dir=mntPoint+USER_CONFIG_DIR
         if os.access(user_config_dir, os.R_OK)==True:
